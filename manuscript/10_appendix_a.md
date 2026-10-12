@@ -21,7 +21,7 @@ they are not claimed as asymptotic laws.
 
 Referenced from Section 5.4. Same caveat as A.1.
 
-\needspace{6\baselineskip}
+\needspace{12\baselineskip}
 
 **Table A.2 — Descriptive power-law fits |ρ_resid(M, L)| = a · L^(−α).**
 
@@ -72,7 +72,7 @@ approximately 80.5 (from 10,490,870 in W1 to 844,953,415 in W3).
 | 30030 | power | 0.7 |
 | 510510 | power | 1.7 |
 
-\needspace{6\baselineskip}
+\needspace{12\baselineskip}
 
 **Table A.5 — ρ_resid(L) model comparison, combined set.**
 
@@ -115,7 +115,7 @@ quadratic-diagnostic CSVs) for each window and modulus. All
 differences are 0 to the six decimal places of the CSV
 extraction precision, hence below 10^-6.
 
-\needspace{10\baselineskip}
+\needspace{25\baselineskip}
 
 **Table A.7 — S_linear vs S_quad per window and modulus.**
 

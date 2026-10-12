@@ -46,6 +46,8 @@ Protocol v1 did not define a numerical smoothness criterion for T7. The A, X, Y,
 
 T6 predicted that S(M) would be greater in windows at higher position than at lower position, for every M. The data falsify this in every case.
 
+\needspace{16\baselineskip}
+
 **Table 3.2 — S(M) across W1, W2, W3.**
 
 | M | S(W1) | S(W2) | S(W3) | W1→W3 decrease |

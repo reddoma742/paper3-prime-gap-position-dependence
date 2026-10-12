@@ -51,6 +51,8 @@ For each M we fit S(M, L) = a · L^(−α) and |ρ_resid(M, L)| = a · L^(−α)
 | 30030 | 2.016 | 0.458 | 0.999 |
 | 510510 | 1.831 | 0.385 | 0.999 |
 
+\needspace{12\baselineskip}
+
 **Table 5.4 — Descriptive power-law fits |ρ_resid(M, L)| = a · L^(−α).**
 
 | M | a | α | R² |

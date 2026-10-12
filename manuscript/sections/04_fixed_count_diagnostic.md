@@ -108,12 +108,20 @@ The magnitude of ρ_resid decreases monotonically with L for every M, mirroring 
 
 Two pairs of windows lie at nearly identical positions: B (L = 23.1261) and P2 (L = 23.1296), separated by ΔL = 0.0035; and C (L = 27.6324) and P4 (L = 27.6324), with identical L.
 
-**Table 4.4 — Reproducibility at duplicated positions.**
+\needspace{6\baselineskip}
 
-| Pair | ΔL | \|ΔS(6)\| | \|ΔS(510510)\| | \|Δρ(6)\| | \|Δρ(510510)\| |
-|------|-----|-----------|----------------|-----------|----------------|
-| B vs P2 | 0.0035 | 1.5×10⁻⁵ | 3.7×10⁻⁴ | 1.7×10⁻⁵ | 1.7×10⁻⁵ |
-| C vs P4 | 0.0000 | 1.0×10⁻⁶ | 1.1×10⁻⁴ | 1.0×10⁻⁶ | 4.0×10⁻⁶ |
+\begin{table}[H]
+\centering
+\textbf{Table 4.4 — Reproducibility at duplicated positions.}
+\begin{tabular}{lrrrrr}
+\toprule
+Pair & $\Delta L$ & $|\Delta S(6)|$ & $|\Delta S(510510)|$ & $|\Delta \rho(6)|$ & $|\Delta \rho(510510)|$ \\
+\midrule
+B vs P2 & 0.0035 & 1.5$\times$10$^{-5}$ & 3.7$\times$10$^{-4}$ & 1.7$\times$10$^{-5}$ & 1.7$\times$10$^{-5}$ \\
+C vs P4 & 0.0000 & 1.0$\times$10$^{-6}$ & 1.1$\times$10$^{-4}$ & 1.0$\times$10$^{-6}$ & 4.0$\times$10$^{-6}$ \\
+\bottomrule
+\end{tabular}
+\end{table}
 
 The differences between the paired estimates are ≤ 3.7×10^-4 in S and ≤ 1.7×10^-5 in ρ. Since the tables report six decimal places, these differences exceed the last printed digit for the larger-modulus S values, but they remain roughly 200 times smaller than the total A-to-P5 decrease reported in Section 5. Because the paired windows overlap substantially (B is a strict subset of P2, with ~96% of P2's gap count shared; C contains P4, with ~99.8% of C's gap count shared with P4), the numerical agreement reported here is not an independent replication. It demonstrates insensitivity of the estimates to small changes in the window endpoint at essentially fixed position. It does not rule out a systematic error shared by all runs.
 

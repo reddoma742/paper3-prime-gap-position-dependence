@@ -8,6 +8,7 @@ date: |
   \normalsize
 header-includes: |
   \usepackage{needspace}
+  \usepackage{float}
 abstract: |
   We report the falsification of a preregistered prediction
   concerning the phase-decomposed lag-one covariance of
