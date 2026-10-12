@@ -1,0 +1,7 @@
+*.exe
+*.o
+*.obj
+build_final.*
+xepass*.log
+zz_*.py
+__pycache__/

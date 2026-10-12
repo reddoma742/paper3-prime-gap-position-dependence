@@ -1,0 +1,29 @@
+title: "Position Dependence of Phase-Decomposed Lag-One Covariance in Prime-Gap Data"
+subtitle: "A preregistered falsification and fixed-count empirical study"
+author: "Reddouane Berramdane"
+date: "2026-10-11"
+header-includes: |
+  \usepackage{needspace}
+abstract: |
+  We report the falsification of a preregistered prediction
+  concerning the phase-decomposed lag-one covariance of
+  consecutive prime gaps, together with a subsequent exploratory
+  diagnostic. Earlier work established persistent negative lag-one
+  dependence and an exact decomposition of the covariance of
+  locally detrended gaps into A + X + Y + D. For a primorial
+  modulus M, we define the non-D covariance share
+  S(M) = (A + X + Y) / Cov(e_n, e_{n+1}). A preregistered
+  prediction that S(M) would not decrease at higher window
+  positions was falsified: across three windows from 10^8 to
+  3×10^10, S(M) decreased for every tested modulus. In an
+  exploratory fixed-count diagnostic using eight windows with
+  approximately 10^8 gaps each, spanning prime locations from
+  10^8 to 10^13, both S(M) and |ρ_resid(M)| decreased
+  monotonically with L = log p. The fixed-count design strongly
+  disfavors a pure sample-size explanation. Over L ∈ [19.96, 29.93],
+  logarithmic, power-law, and reciprocal two-parameter
+  descriptions receive comparable support over the observed
+  range, with no unique functional form identified; the
+  linear-in-L form is substantially disfavored. The results are reported as finite-range empirical
+  trends, without an asymptotic interpretation or proposed
+  theoretical mechanism.

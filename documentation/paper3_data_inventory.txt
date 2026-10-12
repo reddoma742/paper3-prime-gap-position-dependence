@@ -1,0 +1,96 @@
+Paper 3 — Data Inventory
+Generated: 2026-10-10
+Author: Reddouane Berramdane
+
+==============================================================================
+1. Source files
+==============================================================================
+test_multiwindow_v1.cpp                       sha256=9d5f894e2130ce23dd28056658f61216c9697ca19dba704e4663d5516d12115b
+test_multiwindow_quad_v1.cpp                  sha256=7c9823733998985410164b3b5e9c0d09e6747ad0728a7cfc7bea6fdfbe9794c3
+paper3_model_comparison.py                    sha256=fd25a2186421d4f97e372449ea7e59045e5b62b29df61edb70ac570c23684fb7
+
+==============================================================================
+2. Protocol files
+==============================================================================
+paper3_protocol_v1.md                         sha256=b65a5315198d0d014a4425be2d6f1ef70adf24ebb984bdb21c5556b211c5e1f8
+paper3_protocol_v2.md                         sha256=1ac42229a38031950192ed9b6094301dcc38e2889ae8aa35eb64284afb4c6d62
+
+==============================================================================
+3. CSV files
+==============================================================================
+
+Fixed-count set:
+phase_decomp_100000000_2180000000.csv         sha256=bc78112eb36fd14822a73b07194d8c9f7324c0f8e8e275d92669979274a5e128
+phase_decomp_1000000000_3145000000.csv        sha256=c0325bb2317389cd2d1f48846983c4fc775e68e4dd9c1d79d55ebf698f9b80ff
+phase_decomp_10000000000_12220000000.csv      sha256=99235c7155f70e5d980961e1461c24df95a99e770e6e6fc59f041777a16b9083
+phase_decomp_10000000000_12305000000.csv      sha256=97b280fecee4b8b6d8e33411cfa1666db8ac381fad769c4dffda1f61ba8c595d
+phase_decomp_100000000000_102535000000.csv    sha256=7fa28cfafb6f2fab4ac9e7a3af414963048aa3bf467ad5b1556f205c2e83ebd8
+phase_decomp_1000000000000_1002770000000.csv  sha256=c1c9ac8d85e306fe5a2bf51616152f7d685b56daf3b714b9b525bbcb0ebcba47
+phase_decomp_1000000000000_1002765000000.csv  sha256=aec4818f8c9b4e58bf8f55c1cd427d666b0e3a726dac3d4bc22108c64f7458ba
+phase_decomp_10000000000000_10002995000000.csv sha256=443ccdd1a23abd1eb1ddf74d9a2e4e6938be723f44acae733e45b0014973aa57
+
+Variable-count set:
+phase_decomp_100000000_300000000.csv          sha256=a9affaf204ef1bed6b9733901d9b42483d597412c5f4e3b6b70c341d665fd663
+phase_decomp_1000000000_3000000000.csv        sha256=bc2e9d797deefa6d07f7816f3e1312c56cc960c3dabbe8429fb17c255521b2c7
+phase_decomp_10000000000_30000000000.csv      sha256=004bd2f5b4a3606d6a580fd702a9f64025fa5d8d7d8afb70cfb60b1f74c28faa
+
+Quadratic diagnostic:
+phase_decomp_quad_100000000_300000000.csv     sha256=a24e5a280a385a4330cd1682a575c21355c57dd7e1460efef1413124dbfed3ca
+phase_decomp_quad_1000000000_3000000000.csv   sha256=33bf4667c7099e374c33d7a5a813b6be0836b9e7be431b411f8de01d10857d43
+phase_decomp_quad_10000000000_30000000000.csv sha256=dfc181cdf4f1109561237aa65fd694872e81327235f69dad714b01cd24ae8e32
+
+==============================================================================
+4. Model comparison output
+==============================================================================
+model_comparison_output.txt                   sha256=ac2044588cf767f7d15189c3fb4857d9e2e366ed4b1173cae85d1cfd9994bfa5
+
+==============================================================================
+5. Command lines used
+==============================================================================
+
+Compile linear driver:
+  g++ -O2 -std=c++17 -Wall -static test_multiwindow_v1.cpp -o test_multiwindow_v1.exe
+
+Compile quadratic diagnostic:
+  g++ -O2 -std=c++17 -Wall -static test_multiwindow_quad_v1.cpp -o test_multiwindow_quad_v1.exe
+
+Run each linear window (example W1):
+  .\test_multiwindow_v1.exe 100000000 300000000
+
+Run each quadratic window (example W1):
+  .\test_multiwindow_quad_v1.exe 100000000 300000000
+
+Model comparison:
+  python paper3_model_comparison.py > model_comparison_output.txt 2>&1
+
+==============================================================================
+6. Note on seed
+==============================================================================
+All bootstrap runs use SEED_BASE = 20261006 in the source.
+Any older value of 20260106 in draft text is a typo and
+has been corrected.
+
+==============================================================================
+7. Sieve verification artifacts
+==============================================================================
+sieve_verify.py                        sha256=22a4261deb6c9ed7e2fbae27a9a3987efc60241455c3055bf29a053c10d180f0
+sieve_verify_1e12.log                  sha256=1f5e18ac7cc508086c446707c694d377bc393e62f450a6a4cc49916585e01709
+phase_decomp_1000000000000_1000010000000.csv  sha256=785be809db7cd5d462bd15eeffa083e3f4b0874c399244352e96b06f3f87a3af
+log_1000000000000_1000010000000.txt   (verification window log; not used as scientific data)
+
+==============================================================================
+8. Final PDF
+==============================================================================
+paper3_final.pdf                       sha256=42d19c8c713622b86ec50d1c24342ddae39a08cad6dd59d04f2c9347f0cad1b7
+paper3_v1.0.zip                        sha256=a69191255537e9caf5bf6d8fd238fc6dbc0f9faa271862c3ad3c75bed2e3fcb0
+paper3_metadata.yaml                   sha256=7da752a48145bd967ee152d0b3e038b249dc87b6e4c219855eebad24d44e88b0
+
+======================================================================
+9. Additional files added during final corrections
+======================================================================
+test_multiwindow_v2.cpp                  sha256=790c08bb55ef8f92fdc611c38806caf2e374d888840589eeb843489ca366bff2
+test_multiwindow_v2.exe                  sha256=ede3d088da7083968a798c5e35e0ec626dcb702e71489d6f98112378b7ad89da
+12_appendix_c.md                         sha256=32a1c99cc1df7b7cfe99c56f587c8e1d2e3356476a56e34a18437453268d160c
+cmp_v2_C.csv                             sha256=dbfd7d368b3d688920ac8d6553d888a359c46bc052f0625637997591aa7f58bb
+cmp_v2_C_log.txt                         sha256=03e7905ac5c4c6196f21a8dbf12d86edf14b5c44286832907fc64b761f9c2a74
+v2_C.log                                 sha256=d37b40ed5b1dfe41904dda969b6da55836116140a102ed265e2f35c0d6f51771
