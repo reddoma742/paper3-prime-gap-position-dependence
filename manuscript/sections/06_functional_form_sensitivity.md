@@ -109,7 +109,7 @@ To break the non-identifiability, future experiments should pursue one or more o
 
 **(b)** Add additional squarefree CRT-aligned moduli, ideally intermediate primorial products or explicitly documented products of distinct small primes.
 
-**(c)** Independent sieve verification. Extend the independent comparison to a second high-position window, preferably near 10¹³. The internal reproductions reported in Sections 3.5 and 4.5 are encouraging but do not exclude a systematic error shared by all runs.
+**(c)** Independent sieve verification. Extend the independent comparison to a second high-position window, preferably near 10^13. The internal reproductions reported in Sections 3.5 and 4.5 are encouraging but do not exclude a systematic error shared by all runs.
 
 **(d)** Broader detrending forms. A systematic study using local polynomial regression, splines, or detrending on log log p would test whether the ABCD decomposition is robust to broader families of detrending choices.
 
