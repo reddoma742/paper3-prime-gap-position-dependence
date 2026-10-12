@@ -8,7 +8,7 @@ If S depends on n, it should remain approximately constant across this set. If S
 
 ## 4.2 Window Design
 
-Eight windows were constructed, each calibrated to yield approximately 10⁸ gaps.
+Eight windows were constructed, each calibrated to yield approximately 10⁸ gaps. The five windows P1–P5 were designed first; the three auxiliary points A, B, C were added subsequently to extend the range toward lower position, giving eight fixed-count windows in total.
 
 **Table 4.1 — Fixed-count window set.**
 
@@ -138,5 +138,5 @@ Within eight fixed-count windows spanning L ∈ [19.96, 29.93] at n ≈ 10⁸:
 - S(M) decreases monotonically with L for every M tested.
 - ρ_resid(M) decreases in magnitude monotonically with L for every M tested.
 - The total relative decrease is 14–37% depending on M.
-- Duplicated positions agree to five or six significant digits for M ≤ 30030, and to four significant digits for M = 510510.
+- The paired estimates differ by at most 3.7 × 10^-4 in S (at M = 510510) and 1.7 × 10^-5 in ρ_resid. These differences exceed the last printed digit for the larger-modulus S values but remain ~200× smaller than the total A-to-P5 decrease reported in Section 5.
 - The fixed-count diagnostic strongly disfavours a pure sample-size explanation. The functional form of the position dependence is examined in Section 5.

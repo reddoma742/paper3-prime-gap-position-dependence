@@ -1,7 +1,7 @@
 # Paper 3 — Exploratory Protocol v2
 # Date: 2026-10-09
 # Author: Reddouane Berramdane
-# Status: FROZEN — supersedes protocol v1 after T6 falsification
+# Status: versioned (post hoc) — supersedes protocol v1 after T6 falsification
 # Reference: model_comparison_output.txt (sha256 pending)
 
 ## 0. Purpose of this document
@@ -55,7 +55,7 @@ detrending form g ≈ a + b·log p?
 Method: reran W1, W2, W3 with the quadratic form
         g ≈ a + b·u + c·u²,  u = log p − 0.5·(log LO + log HI).
 
-Result: S_nonD identical to six decimal places in all 21 cases.
+Result: S_nonD identical to six decimal places in all 19 cases (6 in W1, 6 in W2, 7 in W3).
         Quadratic coefficient |c| ≤ 5×10⁻³, correction c·u² ≤ 2×10⁻³.
 
 Conclusion: the decrease is **not** an artifact of linear detrending.

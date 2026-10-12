@@ -17,7 +17,7 @@ Four two-parameter forms were fit to S(M, L) and ρ_resid(M, L) for each M:
 | log | y = a + b · log(L) | (a, b) |
 | linear | y = a + b · L | (a, b) |
 
-All four have two free parameters, so information-criterion comparisons are not affected by differences in model complexity. Fits used nonlinear least squares with moment-based starting values (paper3_model_comparison.py; sha256 in the data inventory). Two metrics are reported in the main text: the residual sum of squares from the full fit, and the small-sample corrected Akaike Information Criterion AICc = n · ln(RSS/n) + 2k + 2k(k+1)/(n−k−1). A leave-one-window-out cross-validation RMSE is also computed by the comparison script and stored in model_comparison_output.txt as a secondary sensitivity diagnostic.
+All four have two free parameters, so information-criterion comparisons are not affected by differences in model complexity. Fits used nonlinear least squares with moment-based starting values (paper3_model_comparison.py; sha256 in the data inventory). Two metrics are reported in the main text: the residual sum of squares from the full fit, and the small-sample corrected Akaike Information Criterion AICc = n · ln(RSS/n) + 2k + 2k(k+1)/(n−k−1).
 
 For n = 8 and k = 2, the correction term is 2k(k+1)/(n−k−1) = 2·2·3/5 = 2.4. With only eight windows, AICc rankings are descriptive sensitivity summaries rather than decisive model-selection evidence. Models with ΔAICc < 2 are described as similarly supported within the present candidate set; the term is not used in a strict probabilistic sense.
 
@@ -105,7 +105,7 @@ Within the observed range L ∈ [19.96, 29.93]:
 
 To break the non-identifiability, future experiments should pursue one or more of the following:
 
-**(a)** Extend the L range. The current set spans L ∈ [19.96, 29.93], a factor of approximately 1.50. A factor of 2 or more would begin to distinguish the four candidates. This requires windows at 10¹⁴ and beyond, which are computationally feasible with the current sieve at moderate cost.
+**(a)** Extend the L range. The current set spans L ∈ [19.96, 29.93], a factor of approximately 1.50. A factor of 2 or more would begin to distinguish the four candidates. Windows at 10^14 and 10^15 would extend the L factor to approximately 1.61 and 1.73 respectively; a factor of 2 would require a window near 2 × 10^17, which are computationally feasible with the current sieve at moderate cost.
 
 **(b)** Add additional squarefree CRT-aligned moduli, ideally intermediate primorial products or explicitly documented products of distinct small primes.
 

@@ -11,7 +11,7 @@ Sections 3–6 established a set of empirical facts about the phase-decomposed c
 - Support: Table 3.2; all adjacent window pairs decrease, and all 18 pairwise window–modulus comparisons decrease
 - Scope: W1 = [10⁸, 3×10⁸), W2 = [10⁹, 3×10⁹), W3 = [10¹⁰, 3×10¹⁰)
 
-**C2. Robustness to linear detrending.** The decrease of S(M) is not an artifact of the linear form of the global detrending. Re-running the analysis with a quadratic detrending g ≈ a + b·u + c·u² leaves S unchanged to six decimal places in all 21 cases.
+**C2. Robustness to linear detrending.** The decrease of S(M) is not an artifact of the linear form of the global detrending. Re-running the analysis with a quadratic detrending g ≈ a + b·u + c·u² leaves S unchanged to six decimal places in all 19 cases (6 in W1, 6 in W2, 7 in W3). See Table A.7 for the per-window, per-modulus comparison.
 
 - Scope: Robust to one specific smooth-curvature alternative; not a proof of invariance under arbitrary detrending choices.
 
@@ -31,7 +31,7 @@ Sections 3–6 established a set of empirical facts about the phase-decomposed c
 
 - Scope: 48/48 values negative in the fixed-count set; all 19 within-window bootstrap intervals in the W-set are strictly negative (6 in W1, 6 in W2, 7 in W3). Intervals are marginal within-window; they are not treated as independent tests.
 
-**C7. Internal consistency and reproducibility.** The ABCD decomposition closes to machine precision in every window (max |A+X+Y+D − Cov| ≤ 7.1×10⁻¹⁴). The variance split holds to machine precision. The window W3 reproduces Paper 2 exactly at M = 9699690 (S = 60.4431%, ρ_resid = −0.010306). Two pairs of fixed-count windows at duplicated positions (B/P2, C/P4) agree to five or six significant digits for M ≤ 30030, and to four significant digits for M = 510510.
+**C7. Internal consistency and reproducibility.** The ABCD decomposition closes to machine precision in every window (max |A+X+Y+D − Cov| ≤ 7.1×10⁻¹⁴). The variance split holds to machine precision. The window W3 reproduces Paper 2 exactly at M = 9699690 (S = 60.4431%, ρ_resid = −0.010306). Two pairs of fixed-count windows at duplicated positions (B/P2, C/P4) differ by at most 3.7 × 10^-4 in S (at M = 510510) and 1.7 × 10^-5 in ρ_resid. These differences exceed the last printed digit for the larger-modulus S values but remain ~200× smaller than the total A-to-P5 decrease reported in Section 5.
 
 ## 7.3 Claims We Do Not Make
 
@@ -67,7 +67,7 @@ Paper 3 does not supersede Papers 1 and 2; it extends them.
 
 **(c) Bootstrap.** The block bootstrap (40 blocks, 1000 replicates, seed base 20261006 + k·1000) provides confidence intervals for ρ_resid within a single window. It does not provide confidence intervals for the fitted exponents α(M), which would require a joint bootstrap across windows. The α values are therefore reported as descriptive only, consistent with C5 and N1.
 
-**(d) Modulus eligibility.** Modulus eligibility was determined dynamically by the minimum class count over all residues in the window, with classes below 50 samples excluded and classes between 50 and 99 flagged diagnostic. This rule differs from the fixed seven-modulus list used in Paper 2.
+**(d) Modulus eligibility.** Modulus eligibility was determined dynamically by the minimum class count over all residues in the window, with a modulus excluded when its smallest non-empty class count is below 50 and classes between 50 and 99 flagged diagnostic. This rule differs from the fixed seven-modulus list used in Paper 2.
 
 ## 7.6 Summary
 

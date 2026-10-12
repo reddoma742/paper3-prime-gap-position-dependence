@@ -20,7 +20,7 @@ Cov(e_n, e_{n+1}) = A + X + Y + D,
 
 where A = E[μ_prev · μ_cur], X = E[μ_prev · res_cur], Y = E[res_prev · μ_cur], D = E[res_prev · res_cur]. The non-D covariance share is S(M) = (A + X + Y) / Cov, and the residual correlation is ρ_resid(M) = D / var_within. Block bootstrap confidence intervals used 40 blocks, 1000 replicates, and seed base 20261006 + k·1000.
 
-Modulus eligibility was determined dynamically by the minimum class count over all residues, with classes below 50 samples excluded and classes between 50 and 99 flagged diagnostic. This rule replaced the fixed seven-modulus list that had been used in Paper 2, and constitutes the only logical change to the inherited pipeline.
+Modulus eligibility was determined dynamically by the minimum class count over all residues, with a modulus excluded when its smallest non-empty class count is below 50 and classes between 50 and 99 flagged diagnostic. This rule replaced the fixed seven-modulus list that had been used in Paper 2, and constitutes the only logical change to the inherited pipeline.
 
 ## 3.3 Results
 
@@ -30,9 +30,9 @@ Modulus eligibility was determined dynamically by the minimum class count over a
 |----|-----------|---------|----------|
 | T1 | \|A+X+Y+D − Cov\| < 10⁻⁶ every row | PASS | max deviation 7.1×10⁻¹⁵ (W1), 7.1×10⁻¹⁵ (W2), 7.1×10⁻¹⁴ (W3) |
 | T2 | var_between + var_within = var_e every row | PASS | max deviation ≤ 5.7×10⁻¹⁴ |
-| T3 | S(M) monotone increasing in M each window | PASS | 6/6 monotone in all three windows |
-| T4 | ρ_resid < 0 for every M in every window | PASS | 18/18 values negative |
-| T5 | Bootstrap 95% CIs exclude zero | PASS | 18/18 intervals strictly negative |
+| T3 | S(M) monotone increasing in M each window | PASS | monotone in all three windows (6, 6, 7 moduli) |
+| T4 | ρ_resid < 0 for every M in every window | PASS | 19/19 values negative |
+| T5 | Bootstrap 95% CIs exclude zero | PASS | 19/19 intervals strictly negative |
 | T6 | S(M) at higher window ≥ S(M) at lower window | FAIL | all adjacent window pairs decrease, and all 18 pairwise window–modulus comparisons decrease |
 | T7 | A, X, Y, D vary smoothly across windows | Descriptive; not formally testable as preregistered | see §3.3.1 |
 
@@ -87,4 +87,4 @@ W1, W2, W3 vary both quantities together, so H1 and H2 are not distinguishable f
 
 Protocol v1 specified that if any of T1–T7 failed, computation would stop. In accordance with this clause, the execution of the original phase order (W1 → W2 → W3 → W4 → W5 → W6) was halted after W3.
 
-The follow-up diagnostics in Sections 4–6 were conducted under a separate exploratory protocol (paper3_protocol_v2.md), frozen before their execution, and are presented as exploratory rather than preregistered.
+The follow-up diagnostics in Sections 4–6 were conducted under a separate exploratory protocol (paper3_protocol_v2.md). Protocol v2 was authored after the diagnostics were run and records their results; the diagnostics are therefore exploratory, not preregistered. The protocol is recorded in the source repository with its Git commit hash and date. It is not deposited in a third-party timestamp registry; the hash establishes integrity of the file, not the timing of its conception.

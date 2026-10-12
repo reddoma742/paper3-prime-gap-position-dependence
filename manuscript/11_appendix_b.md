@@ -62,8 +62,8 @@ The script is otherwise platform-independent in logic.
 
 ## B.5 Technical caveat
 
-The verification window is narrow: the log p range is only
-about 3 × 10^-6, and the OLS detrending within this window
+The verification window is narrow: the standard deviation of log p is only about 3 × 10^-6
+(the range is about 10^-5), and the OLS detrending within this window
 is therefore statistically under-determined. The S(M) and
 ρ_resid(M) values from this window are not used as data
 points anywhere in the paper; the window serves solely for
@@ -77,8 +77,8 @@ dedicated numerical-stability check (Appendix C) confirms that
 the reported S(M) and ρ_resid(M) are insensitive to this: an
 independent implementation using a centered log variable
 (u = log1p((p − p_mid)/p_mid)) reproduces both quantities
-to six decimal places at every modulus and in every fixed-count
-window.
+to six decimal places at every modulus and in the four narrow
+windows tested (P3, P4, P5, C).
 
 ## B.6 Artifacts
 

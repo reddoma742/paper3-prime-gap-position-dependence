@@ -45,7 +45,7 @@ from the resulting CSVs and compared.
 All differences max|ΔS| and max|Δρ| are 0.00e+00 to six
 decimal places (the extraction precision of the CSV files).
 The largest difference in β between the two pipelines occurs
-in P5 and equals 7.1 × 10^-5, which is ~4 × 10^-6 of the OLS
+in P5 and equals 7.1 × 10^-5, which is ~2.3 × 10^-6 of the OLS
 standard error (se ≈ 31.4).
 
 ## C.4 Interpretation

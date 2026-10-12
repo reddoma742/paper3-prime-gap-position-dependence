@@ -83,15 +83,6 @@ approximately 80.5 (from 10,490,870 in W1 to 844,953,415 in W3).
 | 30030 | log | 1.6 |
 | 510510 | log | 0.9 |
 
-## A.5 Leave-One-Out RMSE
-
-Referenced from Section 2.9. The leave-one-window-out cross-
-validation RMSE for each candidate form and each modulus is
-computed by paper3_model_comparison.py and stored in
-model_comparison_output.txt (sha256 in data inventory).
-Values are not reproduced here; the reader is referred to
-the comparison output file.
-
 ## A.6 Full ΔAICc Table
 
 Referenced from Section 6.3. The main text of Section 6.3
@@ -113,3 +104,35 @@ y = a + b / L form.
 | 2310 | 0.000 | 2.549 | 0.281 | 7.388 |
 | 30030 | 0.060 | 2.591 | 0.000 | 5.350 |
 | 510510 | 0.000 | 2.940 | 0.465 | 7.030 |
+
+## A.7 Linear vs Quadratic Detrending
+
+Referenced from C2. Table A.7 compares S_linear (from the
+variable-count CSVs of Section 3) and S_quad (from the
+quadratic-diagnostic CSVs) for each window and modulus. All
+differences are 0 to the six decimal places of the CSV
+extraction precision, hence below 10^-6.
+
+**Table A.7 — S_linear vs S_quad per window and modulus.**
+
+| Window | M | S_linear | S_quad | Difference |
+|--------|---|---------:|-------:|-----------:|
+| W1 | 6 | 0.019670 | 0.019670 | 0 |
+| W1 | 30 | 0.162635 | 0.162635 | 0 |
+| W1 | 210 | 0.323706 | 0.323706 | 0 |
+| W1 | 2310 | 0.437143 | 0.437143 | 0 |
+| W1 | 30030 | 0.525091 | 0.525091 | 0 |
+| W1 | 510510 | 0.592241 | 0.592241 | 0 |
+| W2 | 6 | 0.017458 | 0.017458 | 0 |
+| W2 | 30 | 0.142455 | 0.142455 | 0 |
+| W2 | 210 | 0.296759 | 0.296759 | 0 |
+| W2 | 2310 | 0.410226 | 0.410226 | 0 |
+| W2 | 30030 | 0.500907 | 0.500907 | 0 |
+| W2 | 510510 | 0.568517 | 0.568517 | 0 |
+| W3 | 6 | 0.015317 | 0.015317 | 0 |
+| W3 | 30 | 0.125040 | 0.125040 | 0 |
+| W3 | 210 | 0.272725 | 0.272725 | 0 |
+| W3 | 2310 | 0.385438 | 0.385438 | 0 |
+| W3 | 30030 | 0.475868 | 0.475868 | 0 |
+| W3 | 510510 | 0.544106 | 0.544106 | 0 |
+| W3 | 9699690 | 0.604431 | 0.604431 | 0 |

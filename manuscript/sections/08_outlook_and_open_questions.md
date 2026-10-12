@@ -20,7 +20,7 @@ Several explanations have been examined and, in some cases, disfavoured by the a
 
 **(b) Linear detrending artifact.** The quadratic diagnostic of Section 2.4 shows that the decrease survives a specific smooth-curvature alternative.
 
-**(c) Position-calibration artifact.** No evidence of a position-calibration artifact appears in the duplicated-window check: B/P2 and C/P4 agree to five or six significant digits for M ≤ 30030, and to four significant digits for M = 510510. This does not exclude a systematic error shared by all runs.
+**(c) Position-calibration artifact.** No evidence of a position-calibration artifact appears in the duplicated-window check: the paired estimates differ by at most 3.7 × 10^-4 in S (at M = 510510) and 1.7 × 10^-5 in ρ_resid. These differences exceed the last printed digit for the larger-modulus S values but remain ~200× smaller than the total A-to-P5 decrease reported in Section 5. This does not exclude a systematic error shared by all runs.
 
 Beyond these three exclusions, the cause of the position dependence remains open.
 
@@ -44,7 +44,7 @@ No mechanism is identified. The four directions are listed to guide future work,
 
 The following experiments would advance the open questions and are feasible within the current computational setup.
 
-**(a)** Extend the L range. Current range: L ∈ [19.96, 29.93], factor 1.50. Windows at 10¹⁴ and 10¹⁵ would extend this to factors of approximately 1.60 and 1.76 respectively; a factor of 2 would require a window near 2×10¹⁷. With the current sieve, a window at 10¹⁴ with n ≈ 10⁸ gaps requires approximately 10–15 minutes; at 10¹⁵, approximately 1–2 hours. This is the most direct route to test whether the weakening slows or continues.
+**(a)** Extend the L range. Current range: L ∈ [19.96, 29.93], factor 1.50. Windows at 10¹⁴ and 10¹⁵ would extend this to factors of approximately 1.61 and 1.73 respectively; a factor of 2 would require a window near 2×10¹⁷. With the current sieve, a window at 10¹⁴ with n ≈ 10⁸ gaps requires approximately 10–15 minutes; at 10¹⁵, approximately 1–2 hours. This is the most direct route to test whether the weakening slows or continues.
 
 **(b)** Add additional squarefree CRT-aligned moduli, ideally intermediate primorial products or explicitly documented products of distinct small primes.
 
@@ -87,15 +87,14 @@ large-language-model systems at every stage of the project:
   fixed-count diagnostic that separates gap count from window
   position.
 
-- **Claude, accessed via Perplexity**, provided four rounds
-  of critical methodological review. These reviews identified
-  the algebraic redundancy between the lag-one covariance, the
-  residual correlation, and the residual variance; the
-  non-identifiability of power-law, logarithmic, and reciprocal
-  descriptions over the observed narrow range of L; the nested
-  structure of the paired windows B ⊂ P2 and C ⊃ P4; the
-  numerical under-determination of the OLS slope in
-  high-position windows; and numerous textual and statistical
+- **Claude, accessed via Perplexity**, provided multiple
+  rounds of critical methodological review. These reviews
+  identified the algebraic redundancy between the lag-one
+  covariance, the residual correlation, and the residual
+  variance; the non-identifiability of power-law, logarithmic,
+  and reciprocal descriptions over the observed narrow range
+  of L; the nested structure of the paired windows B ⊂ P2
+  and C ⊃ P4; and numerous textual and statistical
   corrections throughout the manuscript.
 
 - **OpenCode** served as the local execution platform. Within
@@ -107,11 +106,13 @@ large-language-model systems at every stage of the project:
   with the centered-variable implementation, and produced the
   LaTeX/PDF build and the reproducibility package.
 
-- **Kimi** and **GPT 6.1 Sol** provided additional critical
-  reviews that identified further numerical and conceptual
-  inconsistencies, including the AICc comparison error, the
-  significant-digits claim in the paired-window check, and
-  several reference and citation issues.
+- **Kimi** and **GPT 6.1 Sol** provided additional
+  critical reviews that identified further numerical and
+  conceptual inconsistencies, including the numerical
+  under-determination of the OLS slope in high-position
+  windows, the AICc comparison error, the significant-digits
+  claim in the paired-window check, and several reference
+  and citation issues.
 
 The human author (R.B.) is solely responsible for the
 scientific claims, the design decisions, the choice of

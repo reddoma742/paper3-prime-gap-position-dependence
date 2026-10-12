@@ -81,9 +81,9 @@ log_1000000000000_1000010000000.txt   (verification window log; not used as scie
 ==============================================================================
 8. Final PDF
 ==============================================================================
-paper3_final.pdf                       sha256=fe777743a749a6396b434461e20547e6f9a98229643009c612a660b8c8bf77f7
-paper3_v1.0.zip                        sha256=cffeb06ad510cac7d760e3ac5b154da9494fe1abe840abbe86a1b8c6cc0c9870
-paper3_metadata.yaml                   sha256=079dc13392519b468a8e0fe38bf14282b0b9172bec9c02e114a172467cf5d2de
+paper3_final.pdf                       sha256=d66b0d70498c673c9e14891a839f94ea52b9e5c368c6b5a6a8df000156108d3a
+paper3_v1.0.zip                        sha256=2ada563640e29c7626fdb7c4673671097682b7aa812fa96000dce545f5eb38a0
+paper3_metadata.yaml                   sha256=8ff0d2116e6deee4b1a1a466c9aa8f1f4e14da53102b1379d903e8d7a5f22ab2
 
 ======================================================================
 9. Additional files added during final corrections

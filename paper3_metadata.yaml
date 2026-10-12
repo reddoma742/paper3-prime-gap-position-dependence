@@ -1,7 +1,7 @@
 title: "Position Dependence of Phase-Decomposed Lag-One Covariance in Prime-Gap Data"
 subtitle: "A preregistered falsification and fixed-count empirical study"
 author: "Reddouane Berramdane"
-date: "2026-10-11"
+date: "2026-10-12"
 header-includes: |
   \usepackage{needspace}
 abstract: |
@@ -24,9 +24,9 @@ abstract: |
   10^8 to 10^13, both S(M) and |ρ_resid(M)| decreased
   monotonically with L = log p. The fixed-count design strongly
   disfavors a pure sample-size explanation. Over L ∈ [19.96, 29.93],
-  logarithmic, power-law, and reciprocal two-parameter
-  descriptions receive comparable support over the observed
-  range, with no unique functional form identified; the
+  logarithmic and power-law descriptions are similarly
+  supported, while the reciprocal form is less supported at
+  large moduli (Table A.6); the
   linear-in-L form is substantially disfavored. The results are reported as finite-range empirical
   trends, without an asymptotic interpretation or proposed
   theoretical mechanism.
