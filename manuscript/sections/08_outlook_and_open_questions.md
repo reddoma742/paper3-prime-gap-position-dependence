@@ -18,7 +18,7 @@ Several explanations have been examined and, in some cases, disfavoured by the a
 
 **(a) Sample size.** The fixed-count set holds n within 5.1%, while S varies by 14–37%. The design removes the most direct sample-size confounding; a pure sample-size explanation is strongly disfavoured.
 
-**(b) Linear detrending artifact.** The quadratic diagnostic of Section 2.4 shows that the decrease survives a specific smooth-curvature alternative.
+**(b) Linear detrending artifact.** The quadratic diagnostic of Section 2.4, performed on W1–W3 only, shows that the decrease survives this specific smooth-curvature alternative on those windows.
 
 **(c) Position-calibration artifact.** No evidence of a position-calibration artifact appears in the duplicated-window check: the paired estimates differ by at most 3.7 × 10^-4 in S (at M = 510510) and 1.7 × 10^-5 in ρ_resid. These differences exceed the last printed digit for the larger-modulus S values but remain ~200× smaller than the total A-to-P5 decrease reported in Section 5. This does not exclude a systematic error shared by all runs.
 
@@ -44,7 +44,7 @@ No mechanism is identified. The four directions are listed to guide future work,
 
 The following experiments would advance the open questions and are feasible within the current computational setup.
 
-**(a)** Extend the L range. Current range: L ∈ [19.96, 29.93], factor 1.50. Windows at 10¹⁴ and 10¹⁵ would extend this to factors of approximately 1.61 and 1.73 respectively; a factor of 2 would require a window near 2×10¹⁷. With the current sieve, a window at 10¹⁴ with n ≈ 10⁸ gaps requires approximately 10–15 minutes; at 10¹⁵, approximately 1–2 hours. This is the most direct route to test whether the weakening slows or continues.
+**(a)** Extend the L range. Current range: L ∈ [19.96, 29.93], factor 1.50. Windows at 10¹⁴ and 10¹⁵ would extend this to factors of approximately 1.61 and 1.73 respectively; a factor of 2 would require a window near 2×10¹⁷. With the current sieve, a window at 10¹⁴ with n ≈ 10⁸ gaps requires approximately 10–15 minutes; at 10¹⁵, approximately 1–2 hours. These times are estimates, not measurements. This is the most direct route to test whether the weakening slows or continues.
 
 **(b)** Add additional squarefree CRT-aligned moduli, ideally intermediate primorial products or explicitly documented products of distinct small primes.
 
@@ -70,7 +70,7 @@ This is recorded as a description of how the present results were obtained, not 
 
 The phase-decomposed lag-one covariance of prime gaps decreases systematically with window position L = log p, at approximately fixed gap count, across the range L ∈ [19.96, 29.93]. The decrease is monotone in every modulus tested, robust to the choice of global detrending form, reproduced at duplicated positions, and not attributable to a pure sample-size effect.
 
-The decrease is not described by any single two-parameter functional form that the available data identify. Logarithmic, power-law, and reciprocal descriptions receive comparable support over the observed range, with the logarithmic form closest to the leader at every modulus; the linear-in-L form is substantially disfavored.
+The decrease is not described by any single two-parameter functional form that the available data identify. Logarithmic and power-law descriptions are similarly supported, while the reciprocal form is less supported at large moduli (M = 510510, 30030); the linear-in-L form is substantially disfavored.
 
 Whether the weakening slows at higher position or continues indefinitely is the principal open question. The answer lies beyond the range accessible to the present study.
 
@@ -119,6 +119,6 @@ scientific claims, the design decisions, the choice of
 methods, and any errors that remain.
 
 A full reproducibility package — source code, CSV outputs,
-frozen protocols, data inventory with SHA-256 hashes, and the
+versioned protocols, data inventory with SHA-256 hashes, and the
 verification logs — is deposited alongside this manuscript on
 Zenodo.

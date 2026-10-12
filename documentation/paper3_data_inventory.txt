@@ -81,9 +81,9 @@ log_1000000000000_1000010000000.txt   (verification window log; not used as scie
 ==============================================================================
 8. Final PDF
 ==============================================================================
-paper3_final.pdf                       sha256=e1f4de6ea8b5c8fb7243370d0e5e61f3b1f1879aa5b3909c3988a7b398c3441f
-paper3_v1.0.zip                        sha256=57ef5440983e7deb2e542d9e0edd29fe1aa79b36846242fa9875d8358a90b352
-paper3_metadata.yaml                   sha256=8ff0d2116e6deee4b1a1a466c9aa8f1f4e14da53102b1379d903e8d7a5f22ab2
+paper3_final.pdf                       sha256=bb923c7983a7ea30107b5c1fba0a48926ccd991630df0da4d75330bdb2e767a5
+paper3_v1.0.zip                        sha256=72fdcdc41d9feba0f4e4c4f163d883e485b04b7b87d7a368e33b514ed46698ec
+paper3_metadata.yaml                   sha256=0967676edecc02891b85d42ed6b3b45b614c0b321c815752fb2aa4694f1e5dfd
 
 ======================================================================
 9. Additional files added during final corrections
@@ -94,3 +94,15 @@ test_multiwindow_v2.exe                  sha256=ede3d088da7083968a798c5e35e0ec62
 cmp_v2_C.csv                             sha256=dbfd7d368b3d688920ac8d6553d888a359c46bc052f0625637997591aa7f58bb
 cmp_v2_C_log.txt                         sha256=03e7905ac5c4c6196f21a8dbf12d86edf14b5c44286832907fc64b761f9c2a74
 v2_C.log                                 sha256=d37b40ed5b1dfe41904dda969b6da55836116140a102ed265e2f35c0d6f51771
+cmp_v2_P3.csv                            sha256=9849654243fe25c75e41fc196b14ea70d212256a5e56e8842e8bebdf0e488ef9
+cmp_v2_P3_dup.csv                        sha256=9849654243fe25c75e41fc196b14ea70d212256a5e56e8842e8bebdf0e488ef9
+cmp_v2_P4.csv                            sha256=29a5e7a5db49837f7f2cfc6b0b381ebd1bdd923ae4e80a7d8e03190cff84c6a5
+cmp_v2_P5.csv                            sha256=24cf414644717529538fae402095ee9f94bcb2b2df02da96956fdaf87d26418d
+cmp_v2_P3_log.txt                        sha256=7ffd3aeb520218baa03002fed43073c3607b461ce0e5a1c327ff9f95acc45928
+cmp_v2_P4_log.txt                        sha256=10fa4267dd78e730950e0c6fec24ff5c441c3348e3e0c94fce7d5c160dbe7ad9
+cmp_v2_P5_log.txt                        sha256=8c0ef9de4409b73a58efe700d5fcd293ab2dfd89c05c7df2ad3b160bd89c3b7e
+v2_P3.log                                sha256=17bd50833141789b941a976ac223728d792e8e0c5991af8c11ede0f3c42cc2d8
+v2_P3_dup.log                            sha256=6f8c3b0a71b5b0fdb0755f3473d422bcae0188d630288d7592ee0c3958728ca0
+v2_P4.log                                sha256=980a9f2c85078a21ea8963dccdc05d32670ae1be7c802831ff062243ebc4d195
+v2_P5.log                                sha256=c4e27933f867f803278a723345e784dd22a1cab3d4629c880a0b969130b40089
+table_a7_check.py                        sha256=556dda37b933b46a7306627c61e56bf42586bc742d0c3e17a2226d72e9d5999a

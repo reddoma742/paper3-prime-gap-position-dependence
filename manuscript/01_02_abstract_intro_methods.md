@@ -18,7 +18,7 @@ an algebraic ratio of the non-D covariance components to the total; it is not a 
 
 The present work asked whether the phase-decomposed covariance structure changes across a sequence of logarithmic windows at different prime locations. The preregistered question was whether the non-D share S(M) would be nondecreasing as the window moved upward on the prime axis.
 
-A protocol (paper3_protocol_v1.md, 2026-10-09) was committed to the repository before any computation; its Git commit hash and date are given in Appendix A.6 (or a footnote). No third-party timestamp registry was used. The protocol is recorded in the source repository with its Git commit hash and date. It is not deposited in a third-party timestamp registry; the hash establishes integrity of the file, not the timing of its conception. It specified seven predictions T1–T7 to be tested on a fixed set of three windows:
+A protocol (paper3_protocol_v1.md) was committed to the source repository before any computation (commit 13d16db, 2026-10-12; file SHA-256 in the data inventory). No third-party timestamp registry was used; the hash establishes file integrity, not the timing of its conception. It specified seven predictions T1–T7 to be tested on a fixed set of three windows:
 W1 = [10⁸, 3×10⁸), W2 = [10⁹, 3×10⁹), W3 = [10¹⁰, 3×10¹⁰) (the window of Paper 2).
 The three windows span a factor of approximately 300 in prime location p (from 10⁸ to 3×10¹⁰), corresponding to a factor of approximately 1.24 in L = log p (from L ≈ 18.97 in W1 to L ≈ 23.57 in W3). The protocol contained an abort condition: if any of T1–T7 failed, computation was to stop and the failure reported without modification of the predictions.
 
@@ -72,7 +72,7 @@ A quadratic diagnostic is also used as a robustness check. For the quadratic fit
 g ≈ a + b · u + c · u², u = log p − 0.5 · (log LO + log HI),
 so that u is centred within the window. The quadratic diagnostic is reported with the exploratory robustness checks and is referenced again among the paper's limitations and claims.
 
-The numerical stability of the detrending is verified explicitly for the fixed-count windows used in this paper. The raw variance of log p varies from approximately 0.54 in the lowest-position window (A) to approximately 10^-8 in the highest (P5). The OLS slope β is therefore imprecise at high position; its standard error reaches ~31 in P5. We verified by running an independent implementation (Appendix C) with a centered variable u = log1p((p − p_mid)/p_mid) that the reported S(M) and ρ_resid(M) are identical to six decimal places in the four narrow windows tested (P3, P4, P5, C) and at every modulus in those windows, and that the residual variance Var(e) is also unchanged.
+The numerical stability of the detrending is verified explicitly for the four narrowest fixed-count windows. The raw variance of log p varies from approximately 0.54 in the lowest-position window (A) to approximately 10^-8 in the highest (P5). The OLS slope β is therefore imprecise at high position; its standard error reaches ~31 in P5. We verified by running an independent implementation (Appendix C) with a centered variable u = log1p((p − p_mid)/p_mid) that the reported S(M) and ρ_resid(M) are identical to six decimal places in the four narrow windows tested (P3, P4, P5, C) and at every modulus in those windows, and that the residual variance Var(e) is also unchanged.
 
 ## 2.5 ABCD decomposition
 

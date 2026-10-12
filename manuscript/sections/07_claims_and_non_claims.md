@@ -11,7 +11,7 @@ Sections 3–6 established a set of empirical facts about the phase-decomposed c
 - Support: Table 3.2; all adjacent window pairs decrease, and all 18 pairwise window–modulus comparisons decrease
 - Scope: W1 = [10⁸, 3×10⁸), W2 = [10⁹, 3×10⁹), W3 = [10¹⁰, 3×10¹⁰)
 
-**C2. Robustness to linear detrending.** The decrease of S(M) is not an artifact of the linear form of the global detrending. Re-running the analysis with a quadratic detrending g ≈ a + b·u + c·u² leaves S unchanged to six decimal places in all 19 cases (6 in W1, 6 in W2, 7 in W3). See Table A.7 for the per-window, per-modulus comparison.
+**C2. Robustness to linear detrending.** The decrease of S(M) is not an artifact of the linear form of the global detrending. Re-running the analysis with a quadratic detrending g ≈ a + b·u + c·u² leaves S unchanged to six decimal places in all 19 cases (6 in W1, 6 in W2, 7 in W3). See Table A.6 for the per-window, per-modulus comparison.
 
 - Scope: Robust to one specific smooth-curvature alternative; not a proof of invariance under arbitrary detrending choices.
 

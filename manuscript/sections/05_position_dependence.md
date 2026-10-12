@@ -72,6 +72,8 @@ To test whether the position dependence is universal across moduli, we normalise
 
 R(M, L) ≡ S(M, L) / S(M, A).
 
+\needspace{10\baselineskip}
+
 **Table 5.5 — Normalised ratios R(M, L).**
 
 | Window | L | R(6) | R(30) | R(210) | R(2310) | R(30030) | R(510510) |

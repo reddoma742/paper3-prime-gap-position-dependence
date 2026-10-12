@@ -14,15 +14,17 @@ The protocol contained an abort condition: if any of T1–T7 failed, computation
 
 ## 3.2 Methods Used in the Preregistered Tests
 
-For each window we computed the lag-one covariance Cov(e_n, e_{n+1}) of consecutive prime gaps g_n = p_{n+1} − p_n with opening prime p_n ∈ [LO, HI), a global detrending g ≈ α + β·log p fitted by OLS, giving e_n = g_n − (alpha + beta · log p_n), per-residue-class means μ[r] of residuals for each M ∈ {6, 30, 210, 2310, 30030, 510510, 9699690} with r = p mod M, and the ABCD decomposition
+For each window we computed the lag-one covariance Cov(e_n, e_{n+1}) of consecutive prime gaps g_n = p_{n+1} − p_n with opening prime p_n ∈ [LO, HI), a global detrending g ≈ α + β·log p fitted by OLS, giving e_n = g_n − (α + β · log p_n), per-residue-class means μ[r] of residuals for each M ∈ {6, 30, 210, 2310, 30030, 510510, 9699690} with r = p mod M, and the ABCD decomposition
 
 Cov(e_n, e_{n+1}) = A + X + Y + D,
 
-where A = E[μ_prev · μ_cur], X = E[μ_prev · res_cur], Y = E[res_prev · μ_cur], D = E[res_prev · res_cur]. The non-D covariance share is S(M) = (A + X + Y) / Cov, and the residual correlation is ρ_resid(M) = D / var_within. Block bootstrap confidence intervals used 40 blocks, 1000 replicates, and seed base 20261006 + k·1000.
+where A = E[μ_prev · μ_cur], X = E[μ_prev · u_{n+1}], Y = E[u_n · μ_cur], D = E[u_n · u_{n+1}]. The non-D covariance share is S(M) = (A + X + Y) / Cov, and the residual correlation is ρ_resid(M) = D / var_within. Block bootstrap confidence intervals used 40 blocks, 1000 replicates, and seed base 20261006 + k·1000.
 
 Modulus eligibility was determined dynamically by the minimum class count over all residues, with a modulus excluded when its smallest non-empty class count is below 50 and classes between 50 and 99 flagged diagnostic. This rule replaced the fixed seven-modulus list that had been used in Paper 2, and constitutes the only logical change to the inherited pipeline.
 
 ## 3.3 Results
+
+\needspace{25\baselineskip}
 
 **Table 3.1 — Preregistered test outcomes.**
 
@@ -87,4 +89,4 @@ W1, W2, W3 vary both quantities together, so H1 and H2 are not distinguishable f
 
 Protocol v1 specified that if any of T1–T7 failed, computation would stop. In accordance with this clause, the execution of the original phase order (W1 → W2 → W3 → W4 → W5 → W6) was halted after W3.
 
-The follow-up diagnostics in Sections 4–6 were conducted under a separate exploratory protocol (paper3_protocol_v2.md). Protocol v2 was authored after the diagnostics were run and records their results; the diagnostics are therefore exploratory, not preregistered. The protocol is recorded in the source repository with its Git commit hash and date. It is not deposited in a third-party timestamp registry; the hash establishes integrity of the file, not the timing of its conception.
+The follow-up diagnostics in Sections 4–6 were conducted under a separate exploratory protocol (paper3_protocol_v2.md). Protocol v2 was committed to the source repository after the diagnostics were run (commit b143b51, 2026-10-12; file SHA-256 in the data inventory); the diagnostics are therefore exploratory, not preregistered. No third-party timestamp registry was used; the hash establishes file integrity, not the timing of its conception.

@@ -36,7 +36,7 @@ For n = 8 and k = 2, the correction term is 2k(k+1)/(n−k−1) = 2·2·3/5 = 2.
 
 Every ΔAICc between best and second-best is below 2. No unique winner emerges among the specific two-parameter forms considered over the present finite L range.
 
-Among the four candidate forms, the linear-in-L model has substantially poorer AICc support for S(M, L) over this dataset, with ΔAICc between 5.35 and 8.17 relative to the leading model in every case (Table A.6). This indicates genuine curvature in S with respect to L over the observed range.
+Among the four candidate forms, the linear-in-L model has substantially poorer AICc support for S(M, L) over this dataset, with ΔAICc between 5.35 and 8.17 relative to the leading model in every case (Table A.5). This indicates genuine curvature in S with respect to L over the observed range.
 
 ## 6.4 Results for ρ_resid(L), Fixed-Count Set
 
@@ -96,7 +96,7 @@ Within the observed range L ∈ [19.96, 29.93]:
 
 ## 6.7 What This Section Does Not Establish
 
-- **N1.** The comparison does not establish that power-law, log, or reciprocal forms are the true functional forms. It establishes only that these forms are similarly supported by the observed data.
+- **N1.** The comparison does not establish that power-law, log, or reciprocal forms are the true functional forms. It establishes only that the logarithmic and power-law forms are similarly supported, while the reciprocal form is less supported at large moduli (M = 510510, 30030).
 - **N2.** The comparison does not establish that the true form lies within the four tested. Other smooth forms of comparable complexity could also fit the data over this range.
 - **N3.** The comparison does not establish asymptotic behaviour. As L → ∞, the four candidate forms have qualitatively different limits. Extrapolation beyond the observed range is not justified.
 - **N4.** The crossing of the α_S and α_ρ sequences reported in Section 5.4 is not explained by this section.
@@ -105,7 +105,7 @@ Within the observed range L ∈ [19.96, 29.93]:
 
 To break the non-identifiability, future experiments should pursue one or more of the following:
 
-**(a)** Extend the L range. The current set spans L ∈ [19.96, 29.93], a factor of approximately 1.50. A factor of 2 or more would begin to distinguish the four candidates. Windows at 10^14 and 10^15 would extend the L factor to approximately 1.61 and 1.73 respectively; a factor of 2 would require a window near 2 × 10^17, which are computationally feasible with the current sieve at moderate cost.
+**(a)** Extend the L range. The current set spans L ∈ [19.96, 29.93], a factor of approximately 1.50. A factor of 2 or more would begin to distinguish the four candidates. Windows at 10^14 and 10^15 would extend the L factor to approximately 1.61 and 1.73 respectively; these windows are feasible according to the estimate in §8.4. A factor of 2 would require a window near 2 × 10^17, whose feasibility has not been assessed.
 
 **(b)** Add additional squarefree CRT-aligned moduli, ideally intermediate primorial products or explicitly documented products of distinct small primes.
 

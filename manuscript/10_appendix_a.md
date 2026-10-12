@@ -83,18 +83,18 @@ approximately 80.5 (from 10,490,870 in W1 to 844,953,415 in W3).
 | 30030 | log | 1.6 |
 | 510510 | log | 0.9 |
 
-## A.6 Full ΔAICc Table
+## A.5 Full ΔAICc Table
 
 Referenced from Section 6.3. The main text of Section 6.3
 reports only the difference between the leading and the
-second-ranked model at each modulus. Table A.6 lists the
+second-ranked model at each modulus. Table A.5 lists the
 full ΔAICc for all four candidate models at each modulus,
 extracted from model_comparison_output.txt (PRIMARY fixed-n
 set, quantity S). The comparison script labels the reciprocal
 model "inverse"; the paper uses "reciprocal" for the same
 y = a + b / L form.
 
-**Table A.6 — Full ΔAICc, S(L) on the fixed-n set (n = 8).**
+**Table A.5 — Full ΔAICc, S(L) on the fixed-n set (n = 8).**
 
 | M | power | reciprocal | log | linear |
 |---|------:|-----------:|----:|-------:|
@@ -105,15 +105,17 @@ y = a + b / L form.
 | 30030 | 0.060 | 2.591 | 0.000 | 5.350 |
 | 510510 | 0.000 | 2.940 | 0.465 | 7.030 |
 
-## A.7 Linear vs Quadratic Detrending
+## A.6 Linear vs Quadratic Detrending
 
-Referenced from C2. Table A.7 compares S_linear (from the
+Referenced from C2. Table A.6 compares S_linear (from the
 variable-count CSVs of Section 3) and S_quad (from the
 quadratic-diagnostic CSVs) for each window and modulus. All
 differences are 0 to the six decimal places of the CSV
 extraction precision, hence below 10^-6.
 
-**Table A.7 — S_linear vs S_quad per window and modulus.**
+\needspace{10\baselineskip}
+
+**Table A.6 — S_linear vs S_quad per window and modulus.**
 
 | Window | M | S_linear | S_quad | Difference |
 |--------|---|---------:|-------:|-----------:|

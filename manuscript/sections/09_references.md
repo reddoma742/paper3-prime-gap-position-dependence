@@ -26,10 +26,11 @@
 
 [7] OEIS Foundation. *Sequence A006880 — Number of primes less
     than 10^n*. The On-Line Encyclopedia of Integer Sequences,
-    retrieved 2026.
+    https://oeis.org/A006880, accessed 2026-10-12.
 
 [8] C. Caldwell. *The Prime Pages — Prime Counting Function*.
-    University of Tennessee at Martin, retrieved 2026.
+    University of Tennessee at Martin, https://t5k.org/howmany.html,
+    accessed 2026-10-12.
 
 [9] R. J. Lemke Oliver and K. Soundararajan. Unexpected
     biases in the distribution of consecutive primes.

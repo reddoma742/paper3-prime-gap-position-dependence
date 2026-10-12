@@ -29,6 +29,8 @@ Two pairs of windows were placed at nearly identical positions as an internal re
 
 ## 4.3 S(M) Across the Fixed-Count Set
 
+\needspace{10\baselineskip}
+
 **Table 4.2a — S(M) across the fixed-count set (M = 6, 30, 210).**
 
 | Window | L | S(6) | S(30) | S(210) |
@@ -69,6 +71,8 @@ For every M, S decreases monotonically with L across the eight windows. The rela
 The relative decrease varies with M, from 14% at M = 510510 to 37% at M = 30.
 
 ## 4.4 ρ_resid(M) Across the Fixed-Count Set
+
+\needspace{10\baselineskip}
 
 **Table 4.3a — ρ_resid(M) across the fixed-count set (M = 6, 30, 210).**
 

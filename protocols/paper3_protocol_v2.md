@@ -15,11 +15,11 @@ not define a numerical smoothness criterion for it.
 This document:
   (a) records the falsification and its scope;
   (b) records the post-falsification exploratory findings;
-  (c) freezes the claims that Paper 3 will and will not make;
+  (c) records the claims that Paper 3 will and will not make;
   (d) defines what counts as a "result" for this paper.
 
-This document was frozen BEFORE writing the paper.
-It is not retrofitted to match the conclusions.
+This document was versioned after the diagnostics were run (post hoc).
+It records the results; the diagnostics are exploratory, not preregistered.
 
 ---
 
@@ -253,7 +253,7 @@ The following claims **will not** be made:
 
 ---
 
-## 7. Data inventory (frozen)
+## 7. Data inventory (versioned)
 
 All CSVs referenced in this protocol are stored with their
 sha256 in `paper3_data_inventory.txt`. The set is:
@@ -289,9 +289,9 @@ Output:      model_comparison_output.txt
 
 ---
 
-## 9. Freeze statement
+## 9. Version statement
 
-This protocol is frozen as of 2026-10-09.
+This protocol is versioned (post hoc) as of 2026-10-12.
 
 Any subsequent change to the paper's claims must be documented in a
 new version of this file with a changelog entry explaining the
