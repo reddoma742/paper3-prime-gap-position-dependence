@@ -5,6 +5,9 @@ date: "2026-10-11"
 header-includes: |
   \usepackage{needspace}
 abstract: |
+  **Preprint DOI:** [10.5281/zenodo.23319686](https://doi.org/10.5281/zenodo.23319686)\
+  **Source repository:** [github.com/reddoma742/paper3-prime-gap-position-dependence](https://github.com/reddoma742/paper3-prime-gap-position-dependence)
+
   We report the falsification of a preregistered prediction
   concerning the phase-decomposed lag-one covariance of
   consecutive prime gaps, together with a subsequent exploratory
