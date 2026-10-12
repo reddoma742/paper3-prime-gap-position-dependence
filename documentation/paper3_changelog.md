@@ -193,7 +193,7 @@ its sha256. Group by category:
 | File | Size (bytes) | SHA-256 |
 |------|--------------|---------|
 | paper3_protocol_v1.md | 1807 | b65a5315198d0d014a4425be2d6f1ef70adf24ebb984bdb21c5556b211c5e1f8 |
-| paper3_protocol_v2.md | 10831 | 1ac42229a38031950192ed9b6094301dcc38e2889ae8aa35eb64284afb4c6d62 |
+| paper3_protocol_v2.md | 12584 | 8d5001c0c0380d20fe8c2fb5224269b66c34a8e40b7cb553641e5fd0b58fff81 |
 
 ### Drafts (.md, .docx)
 

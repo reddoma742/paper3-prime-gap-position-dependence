@@ -36,7 +36,7 @@ For n = 8 and k = 2, the correction term is 2k(k+1)/(n−k−1) = 2·2·3/5 = 2.
 
 Every ΔAICc between best and second-best is below 2. No unique winner emerges among the specific two-parameter forms considered over the present finite L range.
 
-Among the four candidate forms, the linear-in-L model has substantially poorer AICc support for S(M, L) over this dataset, with ΔAICc between 5.35 and 8.17 relative to the leading model in every case (Table A.5). This indicates genuine curvature in S with respect to L over the observed range.
+Among the four candidate forms, the linear-in-L model has substantially poorer AICc support for S(M, L) over this dataset, with ΔAICc between 5.35 and 8.17 relative to the leading model in every case (Table A.6). This indicates genuine curvature in S with respect to L over the observed range.
 
 ## 6.4 Results for ρ_resid(L), Fixed-Count Set
 
