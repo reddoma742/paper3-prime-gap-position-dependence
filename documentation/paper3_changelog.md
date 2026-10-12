@@ -60,7 +60,7 @@ Protocol v1 abort clause triggered; W4–W6 halted.
 ### 2026-10-09 — Post-falsification diagnostics
 
 Diagnostic 1 — Quadratic detrending.
-  g ≈ a + b·u + c·u², u = log p − 0.5(log LO + log HI)
+  g ≈ a + b·z + c·z², z = log p − 0.5(log LO + log HI)
   Result: S unchanged to six decimal places in all 19 cases (6 in W1, 6 in W2, 7 in W3).
   File: test_multiwindow_quad_v1.cpp
 

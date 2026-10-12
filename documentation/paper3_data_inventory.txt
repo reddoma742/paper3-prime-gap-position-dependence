@@ -1,5 +1,5 @@
 Paper 3 — Data Inventory
-Generated: 2026-10-10
+Generated: 2026-10-12
 Author: Reddouane Berramdane
 
 ==============================================================================
@@ -13,7 +13,7 @@ paper3_model_comparison.py                    sha256=fd25a2186421d4f97e372449ea7
 2. Protocol files
 ==============================================================================
 paper3_protocol_v1.md                         sha256=b65a5315198d0d014a4425be2d6f1ef70adf24ebb984bdb21c5556b211c5e1f8
-paper3_protocol_v2.md                         sha256=1ac42229a38031950192ed9b6094301dcc38e2889ae8aa35eb64284afb4c6d62
+paper3_protocol_v2.md                         sha256=8d5001c0c0380d20fe8c2fb5224269b66c34a8e40b7cb553641e5fd0b58fff81
 
 ==============================================================================
 3. CSV files
@@ -81,8 +81,8 @@ log_1000000000000_1000010000000.txt   (verification window log; not used as scie
 ==============================================================================
 8. Final PDF
 ==============================================================================
-paper3_final.pdf                       sha256=bb923c7983a7ea30107b5c1fba0a48926ccd991630df0da4d75330bdb2e767a5
-paper3_v1.0.zip                        sha256=72fdcdc41d9feba0f4e4c4f163d883e485b04b7b87d7a368e33b514ed46698ec
+paper3_final.pdf                       sha256=9923f991c972c1797dc32d22d2de363110fe0162ff7818c91496a6ae4963bb22
+paper3_v1.0.zip                        sha256=7c480694fbcaada3ea614ae778c58251f4d52767929185d43c7dd02a1567d4b9
 paper3_metadata.yaml                   sha256=0967676edecc02891b85d42ed6b3b45b614c0b321c815752fb2aa4694f1e5dfd
 
 ======================================================================

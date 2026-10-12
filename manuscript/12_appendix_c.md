@@ -17,8 +17,8 @@ numerical-stability check, we replace this with an algebraically
 equivalent fit on a centered and scaled variable:
 
   p_mid = (LO + HI) / 2
-  u_n   = log1p((p_n − p_mid) / p_mid)
-  g_n  ≈ α' + β' · u_n
+  z_n   = log1p((p_n − p_mid) / p_mid)
+  g_n  ≈ α' + β' · z_n
 
 The two forms are equivalent: β = β', and the residuals e_n are
 identical up to floating-point rounding. The centered form

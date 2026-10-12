@@ -69,10 +69,12 @@ e_n = g_n − (α + β · log p_n).
 The linear form is retained as the primary detrending throughout Sections 3–6.
 
 A quadratic diagnostic is also used as a robustness check. For the quadratic fit, we use
-g ≈ a + b · u + c · u², u = log p − 0.5 · (log LO + log HI),
-so that u is centred within the window. The quadratic diagnostic is reported with the exploratory robustness checks and is referenced again among the paper's limitations and claims.
+g ≈ a + b · z + c · z², z = log p − 0.5 · (log LO + log HI),
+so that z is centred within the window. The quadratic diagnostic is reported with the exploratory robustness checks and is referenced again among the paper's limitations and claims.
 
-The numerical stability of the detrending is verified explicitly for the four narrowest fixed-count windows. The raw variance of log p varies from approximately 0.54 in the lowest-position window (A) to approximately 10^-8 in the highest (P5). The OLS slope β is therefore imprecise at high position; its standard error reaches ~31 in P5. We verified by running an independent implementation (Appendix C) with a centered variable u = log1p((p − p_mid)/p_mid) that the reported S(M) and ρ_resid(M) are identical to six decimal places in the four narrow windows tested (P3, P4, P5, C) and at every modulus in those windows, and that the residual variance Var(e) is also unchanged.
+The symbol u_n denotes the within-class residual throughout; the centered detrending variable in §2.4 and Appendix C is written z to avoid collision.
+
+The numerical stability of the detrending is verified explicitly for the four narrowest fixed-count windows. The raw variance of log p varies from approximately 0.54 in the lowest-position window (A) to approximately 10^-8 in the highest (P5). The OLS slope β is therefore imprecise at high position; its standard error reaches ~31 in P5. We verified by running an independent implementation (Appendix C) with a centered variable z = log1p((p − p_mid)/p_mid) that the reported S(M) and ρ_resid(M) are identical to six decimal places in the four narrow windows tested (P3, P4, P5, C) and at every modulus in those windows, and that the residual variance Var(e) is also unchanged.
 
 ## 2.5 ABCD decomposition
 

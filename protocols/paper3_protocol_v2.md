@@ -53,10 +53,10 @@ Question: is the decrease in S an artifact of the linear-only
 detrending form g ≈ a + b·log p?
 
 Method: reran W1, W2, W3 with the quadratic form
-        g ≈ a + b·u + c·u²,  u = log p − 0.5·(log LO + log HI).
+        g ≈ a + b·z + c·z²,  z = log p − 0.5·(log LO + log HI).
 
 Result: S_nonD identical to six decimal places in all 19 cases (6 in W1, 6 in W2, 7 in W3).
-        Quadratic coefficient |c| ≤ 5×10⁻³, correction c·u² ≤ 2×10⁻³.
+        Quadratic coefficient |c| ≤ 5×10⁻³, correction c·z² ≤ 2×10⁻³.
 
 Conclusion: the decrease is **not** an artifact of linear detrending.
             Robustness to one specific smooth-curvature alternative.

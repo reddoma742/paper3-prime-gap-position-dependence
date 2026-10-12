@@ -76,7 +76,7 @@ the highest-position windows is correspondingly imprecise. A
 dedicated numerical-stability check (Appendix C) confirms that
 the reported S(M) and ρ_resid(M) are insensitive to this: an
 independent implementation using a centered log variable
-(u = log1p((p − p_mid)/p_mid)) reproduces both quantities
+(z = log1p((p − p_mid)/p_mid)) reproduces both quantities
 to six decimal places at every modulus and in the four narrow
 windows tested (P3, P4, P5, C).
 
