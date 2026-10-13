@@ -78,7 +78,7 @@ This confirms that the prime-generation, detrending, and ABCD calculation reprod
 
 ## 3.6 What the Falsification Does and Does Not Establish
 
-The failure of T6 is decisive as a statistical fact: across three windows spanning a factor of approximately 300 in prime location (p from 10⁸ to 3×10¹⁰), and with bootstrap intervals quantifying within-window uncertainty in rho_resid, S(M) decreases monotonically with position for every modulus tested.
+The failure of T6 is decisive as a statistical fact: across three windows spanning a factor of approximately 300 in prime location (p from 10⁸ to 3×10¹⁰), S(M) decreases monotonically with position for every modulus tested. Bootstrap intervals quantifying within-window uncertainty in ρ_resid are reported for the fixed-count set, but S(M) itself does not carry a bootstrap interval.
 
 The falsification does not identify the cause of the decrease. Two candidate explanations remain open:
 

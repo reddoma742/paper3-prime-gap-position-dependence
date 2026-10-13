@@ -53,9 +53,9 @@ Sections 3–6 established a set of empirical facts about the phase-decomposed c
 
 ## 7.4 Relation to Papers 1 and 2
 
-Paper 1 (Zenodo DOI 10.5281/zenodo.23162269) established persistent negative lag-one dependence in locally detrended prime-gap windows up to N = 10⁹. The present work extends the analysis to higher positions (up to 10¹³) and to a larger family of moduli, and confirms that the negative residual correlation persists across the extended range (C6).
+Paper 1 [1] (Zenodo DOI 10.5281/zenodo.23162269) established persistent negative lag-one dependence in locally detrended prime-gap windows up to N = 10⁹. The present work extends the analysis to higher positions (up to 10¹³) and to a larger family of moduli, and confirms that the negative residual correlation persists across the extended range (C6).
 
-Paper 2 (Zenodo DOI 10.5281/zenodo.23222536) introduced the ABCD decomposition and applied it to the single window [10¹⁰, 3×10¹⁰) with 844,953,415 gaps. The central number of Paper 2 — S = 60.4% at M = 9699690 — is reproduced exactly in W3 of the present work (C7). This identity verifies that the pipeline of Paper 3 is a faithful extension of Paper 2's code.
+Paper 2 [2] (Zenodo DOI 10.5281/zenodo.23222536) introduced the ABCD decomposition and applied it to the single window [10¹⁰, 3×10¹⁰) with 844,953,415 gaps. The central number of Paper 2 — S = 60.4% at M = 9699690 — is reproduced exactly in W3 of the present work (C7). This identity verifies that the pipeline of Paper 3 is a faithful extension of Paper 2's code.
 
 Paper 3 does not supersede Papers 1 and 2; it extends them.
 

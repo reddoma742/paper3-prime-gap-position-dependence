@@ -8,7 +8,7 @@ If S depends on n, it should remain approximately constant across this set. If S
 
 ## 4.2 Window Design
 
-Eight windows were constructed, each calibrated to yield approximately 10⁸ gaps. The five windows P1–P5 were designed first; the three auxiliary points A, B, C were added subsequently to extend the range toward lower position, giving eight fixed-count windows in total.
+Eight windows were constructed, each calibrated to yield approximately 10⁸ gaps. The five windows P1–P5 were designed first; the three auxiliary points A, B, C were added subsequently: A extends the range toward lower position, while B and C were placed at nearly the same positions as P2 and P4 respectively to provide an internal reproducibility check, giving eight fixed-count windows in total.
 
 **Table 4.1 — Fixed-count window set.**
 
@@ -83,8 +83,8 @@ The relative decrease varies with M, from 14% at M = 510510 to 37% at M = 30.
 | B | 23.1261 | −0.025513 | −0.022675 | −0.018940 |
 | P2 | 23.1296 | −0.025530 | −0.022691 | −0.018956 |
 | P3 | 25.3410 | −0.022949 | −0.020667 | −0.017453 |
-| C | 27.6324 | −0.020527 | −0.018682 | −0.015874 |
-| P4 | 27.6324 | −0.020526 | −0.018678 | −0.015871 |
+| C | 27.6324 | −0.020527 | −0.018683 | −0.015875 |
+| P4 | 27.6324 | −0.020526 | −0.018682 | −0.015874 |
 | P5 | 29.9338 | −0.018701 | −0.017189 | −0.014718 |
 
 **Table 4.3b — ρ_resid(M) across the fixed-count set (M = 2310, 30030, 510510).**
@@ -96,8 +96,8 @@ The relative decrease varies with M, from 14% at M = 510510 to 37% at M = 30.
 | B | 23.1261 | −0.016130 | −0.013857 | −0.012136 |
 | P2 | 23.1296 | −0.016142 | −0.013873 | −0.012153 |
 | P3 | 25.3410 | −0.014935 | −0.012904 | −0.011335 |
-| C | 27.6324 | −0.013634 | −0.011786 | −0.010386 |
-| P4 | 27.6324 | −0.013630 | −0.011791 | −0.010388 |
+| C | 27.6324 | −0.013636 | −0.011788 | −0.010390 |
+| P4 | 27.6324 | −0.013634 | −0.011786 | −0.010386 |
 | P5 | 29.9338 | −0.012711 | −0.011071 | −0.009762 |
 
 All 48 values are strictly negative. All 48 marginal bootstrap intervals within windows exclude zero. These intervals support the persistence of negative residual correlation within the analysed windows; they are not treated as 48 independent tests, since the values across M within a single window are derived from the same gap sequence and are strongly dependent.
