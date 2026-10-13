@@ -10,6 +10,8 @@ If S depends on n, it should remain approximately constant across this set. If S
 
 Eight windows were constructed, each calibrated to yield approximately 10⁸ gaps. The five windows P1–P5 were designed first; the three auxiliary points A, B, C were added subsequently: A extends the range toward lower position, while B and C were placed at nearly the same positions as P2 and P4 respectively to provide an internal reproducibility check, giving eight fixed-count windows in total.
 
+\needspace{20\baselineskip}
+
 **Table 4.1 — Fixed-count window set.**
 
 | Label | Range | n_gaps | L = log p center |
